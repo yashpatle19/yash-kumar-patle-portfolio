@@ -27,10 +27,15 @@ jobs:
         uses: actions/checkout@v6
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Prepare static site files
+        run: |
+          mkdir -p _site/assets
+          cp index.html style.css script.js _site/
+          cp assets/Resume.pdf assets/My_Pic_Hoodie_SoftEdges.webp _site/assets/
       - name: Upload site files
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: _site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

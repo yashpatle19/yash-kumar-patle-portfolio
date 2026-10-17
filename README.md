@@ -17,7 +17,7 @@ Google Fonts load from Google Fonts when a network connection is available. The 
 - Update project names, descriptions, technologies, and their matching `data-project-link` keys in `index.html`.
 - Replace the clearly marked education and experience placeholders in the timeline with accurate details. Remove optional cards that do not apply.
 - The current resume is `assets/Resume.pdf`; replace it with your updated PDF and update `resumePath` in `script.js` if you change the filename.
-- The profile card, hero, and intro dialog use `assets/My_Pic_Hoodie_SoftEdges.png` as Yash's portrait.
+- The profile card, hero, and intro dialog use the optimized `assets/My_Pic_Hoodie_SoftEdges.webp` portrait; the original PNG remains in `assets/` as a source copy.
 - Verified project and contact links are configured in `script.js`. Unverified project links are shown as non-clickable “Link pending verification” labels.
 - Change the title and description metadata in the `<head>` of `index.html` if desired.
 
